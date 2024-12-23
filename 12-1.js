@@ -66,24 +66,12 @@ function checkPerimeter(i, j) {
   let perimeter = 0;
 
   if (input[i - 1] == undefined) perimeter++;
-  else if (input[i - 1][j] != input[i][j]) {
-    perimeter++;
-  }
-
+  else if (input[i - 1][j] != input[i][j]) perimeter++;
   if (input[i + 1] == undefined) perimeter++;
-  else if (input[i + 1][j] != input[i][j]) {
-    perimeter++;
-  }
-
+  else if (input[i + 1][j] != input[i][j]) perimeter++;
   if (input[i][j + 1] == undefined) perimeter++;
-  else if (input[i][j + 1] != input[i][j]) {
-    perimeter++;
-  }
-
+  else if (input[i][j + 1] != input[i][j]) perimeter++;
   if (input[i][j - 1] == undefined) perimeter++;
-  else if (input[i][j - 1] != input[i][j]) {
-    perimeter++;
-  }
-
+  else if (input[i][j - 1] != input[i][j]) perimeter++;
   return perimeter;
 }
